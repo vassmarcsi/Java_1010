@@ -5,9 +5,14 @@ public class for_parameter {
 		// Segítség: a paraméterek számát az args tömb hosszából tudjuk meg, amit
 		// az args.length hivatkozás ad meg.
 
-		for (int i = 0; i < args.length; i++) {
-			System.out.println(args[i]);
+		if (args.length > 0) {
+			for (int i = 0; i < args.length; i++) 
+			{
+				System.out.println(args[i]);
+			}
 		}
+		else
+			System.err.println("Nem adtál meg adatot.");
 
 	}
 }
